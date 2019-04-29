@@ -28,7 +28,7 @@ int main(int argc, char const *argv[])
 {
 	//Se obtiene nombre de la instancia
 	string instancia=argv[1];
-	string archivo="instancias/"+instancia+".dat";
+  	string archivo=argv[1];
   	ifstream myfile (archivo);
   	bool first=true;
   	int nro=0, vacios=0;
@@ -158,7 +158,7 @@ int main(int argc, char const *argv[])
  	gettimeofday(&tp,NULL);
  	t2=tp.tv_sec*1000+tp.tv_usec/1000;
  	//Se printean resultados
- 	cout << "Instancia: "<<instancia<<"\n";
+ 	cout << "Archivo: "<<instancia<<"\n";
  	cout << "Solucion: (";
  	for (int i = 0; i < (int)solucion.size(); ++i)
  	{
