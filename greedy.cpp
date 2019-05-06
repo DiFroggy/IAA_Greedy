@@ -2,11 +2,11 @@
 #include <fstream>
 #include <ctime>
 #include <string>
-#include <bits/stdc++.h>
+#include <vector>
 #include <sys/time.h> 
 using namespace std;
 //Función que calcula el costo de una permutación. Costos son bidireccionales, contemplando instancias no-simétricas.
-int calcularCosto(std::vector<int> solucion,std::vector<std::vector<int>> flujos,std::vector<std::vector<int>> distancias){
+int calcularCosto(std::vector<int> solucion,std::vector<std::vector<int> > flujos,std::vector<std::vector<int> > distancias){
 	int suma=0;
 	for (int i = 0; i < (int)solucion.size(); ++i)
 	{
@@ -34,7 +34,7 @@ int main(int argc, char const *argv[])
   	int nro=0, vacios=0;
   	string line;
   	//Se extraen las matrices de flujo y distancias
-  	std::vector<vector <int>> flujos,distancias;
+  	std::vector<vector <int> > flujos,distancias;
   	if (myfile.is_open())
   	{
   		while ( getline (myfile,line) )
