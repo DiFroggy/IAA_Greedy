@@ -1,5 +1,5 @@
 make:
-	g++ greedy.cpp -std=gnu++17 -o greedy.o -Wall
+	g++ tabu.cpp -std=gnu++17 -o tabu.o -Wall
 
 clean:
 	rm -f *.o
